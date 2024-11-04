@@ -1,30 +1,28 @@
  // Aquí tu código
 /*esto es lo que hace funcionar el prompt de manera correcta:*/
-const lista=document.getElementById ("lista");
-const agregar=document.getElementById ("agregar");
+const lista=document.getElementById("lista");
+const agregar=document.getElementById("agregar");
+
 
 
 agregar.addEventListener ("click", function(){
-    playa  = prompt("¿Cuál es tu playa favorita?",""),
-    li.innerHTML = (" Mi playa favorita es " + playa);
+  const listaChild=document.createElement("li");
+  (playa  = prompt("¿Cuál es tu playa favorita?")),
+  (listaChild.textContent = (" Mi playa favorita es " + playa));
+  playa="";
+  lista.appendChild(listaChild);
 });
 
-const ul=document.createElement ("ul");
-const li=document.createElement ("li");
-ul.append(li);
-document.body.append(ul);
 
 
-/*const elementAgregar = document.createElement ("agregar");
-const elementLista = document.createElement ("lista");
-const elementPlaya = document.createElement("playa");
-const elementAgregar = document.createElement ("agregar");
-const elementPlaya = document.createElement("playa");
-elementLista.appendChild (agregar);
-*/
+
+
+/*const ul=document.createElement ("ul");
+document.body.append(ul);*/
 
 
 /*una forma de hacerlo pero sin pulsar el boton
+
 let ul = document.createElement('ul');
 document.body.append(ul);
 
